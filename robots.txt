@@ -1,0 +1,3 @@
+User-agent: Googlebot
+
+Sitemap: https://ckhongme.github.io/sitemap.xml

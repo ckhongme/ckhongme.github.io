@@ -80,18 +80,18 @@
 
 
 
-<meta name="description" content="现在只要静静地等风到来~">
+<meta name="description" content="关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；  变量变量类型（UnityShader的属性）   变量 类型 写法    Int 整数类型 _Int ( “Int”, Int) = 2   Float 浮点数类型 _Float ( “FloatValue”，Float ) = 0.0   Range(min,max) 范围值类型 _Range ( “Range”，">
 <meta name="keywords" content="UnityShader,ShaderLab,Shader">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UnityShader - 常用术语查询">
 <meta property="og:url" content="https://ckhongme.github.io/2019/04-10/UnityShader - UnityShader常用术语查询/index.html">
 <meta property="og:site_name" content="喵将&#39;s博客">
-<meta property="og:description" content="现在只要静静地等风到来~">
+<meta property="og:description" content="关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；  变量变量类型（UnityShader的属性）   变量 类型 写法    Int 整数类型 _Int ( “Int”, Int) = 2   Float 浮点数类型 _Float ( “FloatValue”，Float ) = 0.0   Range(min,max) 范围值类型 _Range ( “Range”，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-03T07:10:16.847Z">
+<meta property="og:updated_time" content="2019-08-03T08:02:53.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UnityShader - 常用术语查询">
-<meta name="twitter:description" content="现在只要静静地等风到来~">
+<meta name="twitter:description" content="关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；  变量变量类型（UnityShader的属性）   变量 类型 写法    Int 整数类型 _Int ( “Int”, Int) = 2   Float 浮点数类型 _Float ( “FloatValue”，Float ) = 0.0   Range(min,max) 范围值类型 _Range ( “Range”，">
 
 
 
@@ -390,7 +390,354 @@
       
 
       
-        
+        <p>关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；</p>
+<hr>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h3 id="变量类型（UnityShader的属性）"><a href="#变量类型（UnityShader的属性）" class="headerlink" title="变量类型（UnityShader的属性）"></a>变量类型（UnityShader的属性）</h3><table>
+<thead>
+<tr>
+<th align="left">变量</th>
+<th align="left">类型</th>
+<th align="left">写法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Int</td>
+<td align="left">整数类型</td>
+<td align="left">_Int ( “Int”, Int) = 2</td>
+</tr>
+<tr>
+<td align="left">Float</td>
+<td align="left">浮点数类型</td>
+<td align="left">_Float ( “FloatValue”，Float ) = 0.0</td>
+</tr>
+<tr>
+<td align="left">Range(min,max)</td>
+<td align="left">范围值类型</td>
+<td align="left">_Range ( “Range”，Range( 0.5, 1.0 )) = 1.0</td>
+</tr>
+<tr>
+<td align="left">Color</td>
+<td align="left">颜色类型</td>
+<td align="left">_Color ( “MainColor”，Color ) = (1,1,1,1)</td>
+</tr>
+<tr>
+<td align="left">Vector</td>
+<td align="left">向量类型</td>
+<td align="left">_Vector ( “Vector4”, Vector ) = (1,1,1,1)</td>
+</tr>
+<tr>
+<td align="left">2D</td>
+<td align="left">2D纹理贴图</td>
+<td align="left">_MainTex ( “Base(RGB)”，2D ) = “white” { }</td>
+</tr>
+<tr>
+<td align="left">3D</td>
+<td align="left">3D纹理贴图</td>
+<td align="left">_3D(“3D”, 3D) = “black” { }</td>
+</tr>
+<tr>
+<td align="left">Cube</td>
+<td align="left">三维纹理</td>
+<td align="left">_CubeTex ( “3DMap”，Cube ) = “white” { }</td>
+</tr>
+</tbody></table>
+<h3 id="变量类型（CG程序）"><a href="#变量类型（CG程序）" class="headerlink" title="变量类型（CG程序）"></a>变量类型（CG程序）</h3><table>
+<thead>
+<tr>
+<th align="left">变量</th>
+<th align="left">类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">int</td>
+<td align="left">32位整形数据</td>
+</tr>
+<tr>
+<td align="left">half</td>
+<td align="left">16位浮点数据</td>
+</tr>
+<tr>
+<td align="left">float</td>
+<td align="left">32位浮点数据，一个符号位</td>
+</tr>
+<tr>
+<td align="left">fixed</td>
+<td align="left">12位定点数</td>
+</tr>
+<tr>
+<td align="left">sampler*</td>
+<td align="left">纹理对象的句柄，分为sampler、sampler1D、sampler2D、sampler3D、samplerCUBE和samplerRECT</td>
+</tr>
+<tr>
+<td align="left">bool</td>
+<td align="left">布尔数据，被所有的图形接口支持</td>
+</tr>
+<tr>
+<td align="left">string</td>
+<td align="left">字符类型</td>
+</tr>
+</tbody></table>
+<h3 id="ShaderLab与CG的变量类型匹配"><a href="#ShaderLab与CG的变量类型匹配" class="headerlink" title="ShaderLab与CG的变量类型匹配"></a>ShaderLab与CG的变量类型匹配</h3><table>
+<thead>
+<tr>
+<th align="left">ShaderLab</th>
+<th align="left">CG</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Color/Vector</td>
+<td align="left">float4/half4/fixed4</td>
+</tr>
+<tr>
+<td align="left">Range/Float</td>
+<td align="left">float/half/fixed</td>
+</tr>
+<tr>
+<td align="left">2D</td>
+<td align="left">sample2D</td>
+</tr>
+<tr>
+<td align="left">Cube</td>
+<td align="left">sampleCube</td>
+</tr>
+<tr>
+<td align="left">3D</td>
+<td align="left">sample3D</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><h2 id="标签类型（用于SubShader）"><a href="#标签类型（用于SubShader）" class="headerlink" title="标签类型（用于SubShader）"></a>标签类型（用于SubShader）</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Queue</td>
+<td align="left">定义渲染顺序</td>
+</tr>
+<tr>
+<td align="left">RenderType</td>
+<td align="left">Unity可以运行时替换符合特定RenderType的所有Shader</td>
+</tr>
+<tr>
+<td align="left">DisableBatching</td>
+<td align="left">是否使用批处理</td>
+</tr>
+<tr>
+<td align="left">ForceNoShadowCasting</td>
+<td align="left">值为”true”时，表示不接受投射阴影</td>
+</tr>
+<tr>
+<td align="left">IgnoreProjector</td>
+<td align="left">值为”true”时，表示不接受Projector组件的投影；通常用于半透明物体；</td>
+</tr>
+<tr>
+<td align="left">CanUseSpriteAtlas</td>
+<td align="left">当用于sprite时，将该标签设为False</td>
+</tr>
+<tr>
+<td align="left">PreviewType</td>
+<td align="left">材质预览类型，默认是球形；可以设置成Plane，Skybox等；</td>
+</tr>
+</tbody></table>
+<h4 id="RenderType-渲染类型"><a href="#RenderType-渲染类型" class="headerlink" title="RenderType 渲染类型"></a>RenderType 渲染类型</h4><table>
+<thead>
+<tr>
+<th align="left">渲染类型</th>
+<th align="left">用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Opaque</td>
+<td align="left">绝大部分不透明的物体都使用这个</td>
+</tr>
+<tr>
+<td align="left">Transparent</td>
+<td align="left">绝大部分透明的物体、包括粒子特效都使用这个</td>
+</tr>
+<tr>
+<td align="left">Background</td>
+<td align="left">天空盒都使用这个</td>
+</tr>
+<tr>
+<td align="left">Overlay</td>
+<td align="left">GUI、镜头光晕都使用这个</td>
+</tr>
+</tbody></table>
+<h4 id="Queue-渲染队列参数"><a href="#Queue-渲染队列参数" class="headerlink" title="Queue 渲染队列参数"></a>Queue 渲染队列参数</h4><table>
+<thead>
+<tr>
+<th align="left">渲染队列</th>
+<th align="left">数值</th>
+<th align="left">应用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Background</td>
+<td align="left">1000</td>
+<td align="left">最早被调用的渲染，用来渲染天空盒或者背景</td>
+</tr>
+<tr>
+<td align="left">Geometry</td>
+<td align="left">2000</td>
+<td align="left">默认值，用来渲染非透明物体（场景中的绝大多数物体应该是非透明的）</td>
+</tr>
+<tr>
+<td align="left">AlphaTest</td>
+<td align="left">2450</td>
+<td align="left">用来渲染经过AlphaTest的像素，单独为AlphaTest设定一个Queue是出于对效率的考虑</td>
+</tr>
+<tr>
+<td align="left">Transparent</td>
+<td align="left">3000</td>
+<td align="left">以从后往前的顺序渲染透明物体</td>
+</tr>
+<tr>
+<td align="left">Overlay</td>
+<td align="left">4000</td>
+<td align="left">用来渲染叠加的效果，是渲染的最后阶段（比如镜头光晕等特效）</td>
+</tr>
+</tbody></table>
+<h2 id="标签类型（用于Pass）"><a href="#标签类型（用于Pass）" class="headerlink" title="标签类型（用于Pass）"></a>标签类型（用于Pass）</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">LightMode</td>
+<td align="left">定义该Pass在渲染流水线中的角色</td>
+</tr>
+<tr>
+<td align="left">RequireOptions</td>
+<td align="left">指定需要满足的条件</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="LOD-数值"><a href="#LOD-数值" class="headerlink" title="LOD 数值"></a>LOD 数值</h1><p>在Unity的Quality Settings中我们可以设定允许的最大LOD，当设定的LOD小于SubShader所指定的LOD时，这个SubShader将不可用；</p>
+<table>
+<thead>
+<tr>
+<th align="left">LOD</th>
+<th align="left">数值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">VertexLit及其系列</td>
+<td align="left">100</td>
+</tr>
+<tr>
+<td align="left">Decal, Reflective VertexLit</td>
+<td align="left">150</td>
+</tr>
+<tr>
+<td align="left">Diffuse</td>
+<td align="left">200</td>
+</tr>
+<tr>
+<td align="left">Diffuse Detail, Reflective Bumped Unlit, Reflective Bumped VertexLit</td>
+<td align="left">250</td>
+</tr>
+<tr>
+<td align="left">Bumped, Specular</td>
+<td align="left">300</td>
+</tr>
+<tr>
+<td align="left">Bumped Specular</td>
+<td align="left">400</td>
+</tr>
+<tr>
+<td align="left">Parallax</td>
+<td align="left">500</td>
+</tr>
+<tr>
+<td align="left">Parallax Specular</td>
+<td align="left">600</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="渲染状态"><a href="#渲染状态" class="headerlink" title="渲染状态"></a>渲染状态</h1><table>
+<thead>
+<tr>
+<th align="left">状态参数</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Cull</td>
+<td align="left">设置剔除模式：剔除背面Back/正面Front/关闭Off</td>
+</tr>
+<tr>
+<td align="left">ZTest</td>
+<td align="left">深度测试</td>
+</tr>
+<tr>
+<td align="left">ZWrite</td>
+<td align="left">深度写入：开启On/关闭Off</td>
+</tr>
+<tr>
+<td align="left">Blend</td>
+<td align="left">混合模式</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="语义"><a href="#语义" class="headerlink" title="语义"></a>语义</h1><h3 id="应用程序-gt-顶点函数-（a2v）"><a href="#应用程序-gt-顶点函数-（a2v）" class="headerlink" title="应用程序 -&gt; 顶点函数 （a2v）"></a>应用程序 -&gt; 顶点函数 （a2v）</h3><table>
+<thead>
+<tr>
+<th align="left">语义名称</th>
+<th align="left">意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">POSITION</td>
+<td align="left">顶点坐标（模型空间下的）</td>
+</tr>
+<tr>
+<td align="left">NORMAL</td>
+<td align="left">法线( 模型空间下，用于计算光照)</td>
+</tr>
+<tr>
+<td align="left">TANGENT</td>
+<td align="left">切线（模型空间下）</td>
+</tr>
+<tr>
+<td align="left">TEXCOORD0~ｎ</td>
+<td align="left">纹理坐标</td>
+</tr>
+<tr>
+<td align="left">COLOR</td>
+<td align="left">顶点颜色</td>
+</tr>
+</tbody></table>
+<h3 id="顶点函数-gt-片元函数（v2f）"><a href="#顶点函数-gt-片元函数（v2f）" class="headerlink" title="顶点函数 -&gt; 片元函数（v2f）"></a>顶点函数 -&gt; 片元函数（v2f）</h3><table>
+<thead>
+<tr>
+<th align="left">语义名称</th>
+<th align="left">意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">SV_POSITION</td>
+<td align="left">剪裁空间中的顶点坐标（一般是系统直接使用）</td>
+</tr>
+<tr>
+<td align="left">COLOR0</td>
+<td align="left">可以传递一组值 4个</td>
+</tr>
+<tr>
+<td align="left">COLOR1</td>
+<td align="left">可以传递一组值 4个</td>
+</tr>
+<tr>
+<td align="left">TEXCOORD0~7</td>
+<td align="left">传递纹理坐标，但不是必需的</td>
+</tr>
+</tbody></table>
+<hr>
+
       
     </div>
     
@@ -488,8 +835,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -593,6 +949,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量类型（UnityShader的属性）"><span class="nav-number">1.0.1.</span> <span class="nav-text">变量类型（UnityShader的属性）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量类型（CG程序）"><span class="nav-number">1.0.2.</span> <span class="nav-text">变量类型（CG程序）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ShaderLab与CG的变量类型匹配"><span class="nav-number">1.0.3.</span> <span class="nav-text">ShaderLab与CG的变量类型匹配</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#标签"><span class="nav-number">2.</span> <span class="nav-text">标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标签类型（用于SubShader）"><span class="nav-number">2.1.</span> <span class="nav-text">标签类型（用于SubShader）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RenderType-渲染类型"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">RenderType 渲染类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Queue-渲染队列参数"><span class="nav-number">2.1.0.2.</span> <span class="nav-text">Queue 渲染队列参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签类型（用于Pass）"><span class="nav-number">2.2.</span> <span class="nav-text">标签类型（用于Pass）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LOD-数值"><span class="nav-number">3.</span> <span class="nav-text">LOD 数值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#渲染状态"><span class="nav-number">4.</span> <span class="nav-text">渲染状态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义"><span class="nav-number">5.</span> <span class="nav-text">语义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应用程序-gt-顶点函数-（a2v）"><span class="nav-number">5.0.1.</span> <span class="nav-text">应用程序 -&gt; 顶点函数 （a2v）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#顶点函数-gt-片元函数（v2f）"><span class="nav-number">5.0.2.</span> <span class="nav-text">顶点函数 -&gt; 片元函数（v2f）</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

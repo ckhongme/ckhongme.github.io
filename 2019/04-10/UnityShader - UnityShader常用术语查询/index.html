@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="喵将&#39;s博客">
 <meta property="og:description" content="关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；  变量变量类型（UnityShader的属性）   变量 类型 写法    Int 整数类型 _Int ( “Int”, Int) = 2   Float 浮点数类型 _Float ( “FloatValue”，Float ) = 0.0   Range(min,max) 范围值类型 _Range ( “Range”，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-05T03:07:19.175Z">
+<meta property="og:updated_time" content="2019-08-06T07:29:28.592Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UnityShader - 常用术语查询">
 <meta name="twitter:description" content="关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；  变量变量类型（UnityShader的属性）   变量 类型 写法    Int 整数类型 _Int ( “Int”, Int) = 2   Float 浮点数类型 _Float ( “FloatValue”，Float ) = 0.0   Range(min,max) 范围值类型 _Range ( “Range”，">
@@ -392,7 +392,7 @@
       
         <p>关于UnityShader常用到的术语，会随着学习的进度持续在这篇文章中更新；</p>
 <hr>
-<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h3 id="变量类型（UnityShader的属性）"><a href="#变量类型（UnityShader的属性）" class="headerlink" title="变量类型（UnityShader的属性）"></a>变量类型（UnityShader的属性）</h3><table>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><h2 id="变量类型（UnityShader的属性）"><a href="#变量类型（UnityShader的属性）" class="headerlink" title="变量类型（UnityShader的属性）"></a>变量类型（UnityShader的属性）</h2><table>
 <thead>
 <tr>
 <th align="left">变量</th>
@@ -441,7 +441,7 @@
 <td align="left">_CubeTex ( “3DMap”，Cube ) = “white” { }</td>
 </tr>
 </tbody></table>
-<h3 id="变量类型（CG程序）"><a href="#变量类型（CG程序）" class="headerlink" title="变量类型（CG程序）"></a>变量类型（CG程序）</h3><table>
+<h2 id="变量类型（CG程序）"><a href="#变量类型（CG程序）" class="headerlink" title="变量类型（CG程序）"></a>变量类型（CG程序）</h2><table>
 <thead>
 <tr>
 <th align="left">变量</th>
@@ -477,7 +477,7 @@
 <td align="left">字符类型</td>
 </tr>
 </tbody></table>
-<h3 id="ShaderLab与CG的变量类型匹配"><a href="#ShaderLab与CG的变量类型匹配" class="headerlink" title="ShaderLab与CG的变量类型匹配"></a>ShaderLab与CG的变量类型匹配</h3><table>
+<h2 id="ShaderLab与CG的变量类型匹配"><a href="#ShaderLab与CG的变量类型匹配" class="headerlink" title="ShaderLab与CG的变量类型匹配"></a>ShaderLab与CG的变量类型匹配</h2><table>
 <thead>
 <tr>
 <th align="left">ShaderLab</th>
@@ -503,6 +503,35 @@
 <tr>
 <td align="left">3D</td>
 <td align="left">sample3D</td>
+</tr>
+</tbody></table>
+<h2 id="UnityShader内置的时间变量"><a href="#UnityShader内置的时间变量" class="headerlink" title="UnityShader内置的时间变量"></a>UnityShader内置的时间变量</h2><table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">类型</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">_Time</td>
+<td align="left">float4</td>
+<td align="left">t是自该场景加载开始所经过的时间,4个分量分别是(t/20, t, 2t, 3t)</td>
+</tr>
+<tr>
+<td align="left">_SinTime</td>
+<td align="left">float4</td>
+<td align="left">t是时间的正弦值,4个分量的值分别是(t/8, t/4, t/2, t)</td>
+</tr>
+<tr>
+<td align="left">_CosTime</td>
+<td align="left">float4</td>
+<td align="left">t是时间的余弦值,4个分量的值分别是(t/8, t/4, t/2, t)</td>
+</tr>
+<tr>
+<td align="left">unity_DeltaTime</td>
+<td align="left">float4</td>
+<td align="left">dt是时间增量,4个分量分别是(dt, 1/dt, smoothDt, 1/smoothDt)</td>
 </tr>
 </tbody></table>
 <hr>
@@ -684,7 +713,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h1 id="语义"><a href="#语义" class="headerlink" title="语义"></a>语义</h1><h3 id="应用程序-gt-顶点函数-（a2v）"><a href="#应用程序-gt-顶点函数-（a2v）" class="headerlink" title="应用程序 -&gt; 顶点函数 （a2v）"></a>应用程序 -&gt; 顶点函数 （a2v）</h3><table>
+<h1 id="语义"><a href="#语义" class="headerlink" title="语义"></a>语义</h1><h2 id="应用程序-gt-顶点函数-（a2v）"><a href="#应用程序-gt-顶点函数-（a2v）" class="headerlink" title="应用程序 -&gt; 顶点函数 （a2v）"></a>应用程序 -&gt; 顶点函数 （a2v）</h2><table>
 <thead>
 <tr>
 <th align="left">语义名称</th>
@@ -712,7 +741,7 @@
 <td align="left">顶点颜色</td>
 </tr>
 </tbody></table>
-<h3 id="顶点函数-gt-片元函数（v2f）"><a href="#顶点函数-gt-片元函数（v2f）" class="headerlink" title="顶点函数 -&gt; 片元函数（v2f）"></a>顶点函数 -&gt; 片元函数（v2f）</h3><table>
+<h2 id="顶点函数-gt-片元函数（v2f）"><a href="#顶点函数-gt-片元函数（v2f）" class="headerlink" title="顶点函数 -&gt; 片元函数（v2f）"></a>顶点函数 -&gt; 片元函数（v2f）</h2><table>
 <thead>
 <tr>
 <th align="left">语义名称</th>
@@ -959,7 +988,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量类型（UnityShader的属性）"><span class="nav-number">1.0.1.</span> <span class="nav-text">变量类型（UnityShader的属性）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量类型（CG程序）"><span class="nav-number">1.0.2.</span> <span class="nav-text">变量类型（CG程序）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ShaderLab与CG的变量类型匹配"><span class="nav-number">1.0.3.</span> <span class="nav-text">ShaderLab与CG的变量类型匹配</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#标签"><span class="nav-number">2.</span> <span class="nav-text">标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标签类型（用于SubShader）"><span class="nav-number">2.1.</span> <span class="nav-text">标签类型（用于SubShader）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RenderType-渲染类型"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">RenderType 渲染类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Queue-渲染队列参数"><span class="nav-number">2.1.0.2.</span> <span class="nav-text">Queue 渲染队列参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签类型（用于Pass）"><span class="nav-number">2.2.</span> <span class="nav-text">标签类型（用于Pass）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LOD-数值"><span class="nav-number">3.</span> <span class="nav-text">LOD 数值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#渲染状态"><span class="nav-number">4.</span> <span class="nav-text">渲染状态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义"><span class="nav-number">5.</span> <span class="nav-text">语义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#应用程序-gt-顶点函数-（a2v）"><span class="nav-number">5.0.1.</span> <span class="nav-text">应用程序 -&gt; 顶点函数 （a2v）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#顶点函数-gt-片元函数（v2f）"><span class="nav-number">5.0.2.</span> <span class="nav-text">顶点函数 -&gt; 片元函数（v2f）</span></a></li></ol></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#变量类型（UnityShader的属性）"><span class="nav-number">1.1.</span> <span class="nav-text">变量类型（UnityShader的属性）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量类型（CG程序）"><span class="nav-number">1.2.</span> <span class="nav-text">变量类型（CG程序）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ShaderLab与CG的变量类型匹配"><span class="nav-number">1.3.</span> <span class="nav-text">ShaderLab与CG的变量类型匹配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UnityShader内置的时间变量"><span class="nav-number">1.4.</span> <span class="nav-text">UnityShader内置的时间变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标签"><span class="nav-number">2.</span> <span class="nav-text">标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标签类型（用于SubShader）"><span class="nav-number">2.1.</span> <span class="nav-text">标签类型（用于SubShader）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RenderType-渲染类型"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">RenderType 渲染类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Queue-渲染队列参数"><span class="nav-number">2.1.0.2.</span> <span class="nav-text">Queue 渲染队列参数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签类型（用于Pass）"><span class="nav-number">2.2.</span> <span class="nav-text">标签类型（用于Pass）</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#LOD-数值"><span class="nav-number">3.</span> <span class="nav-text">LOD 数值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#渲染状态"><span class="nav-number">4.</span> <span class="nav-text">渲染状态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义"><span class="nav-number">5.</span> <span class="nav-text">语义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用程序-gt-顶点函数-（a2v）"><span class="nav-number">5.1.</span> <span class="nav-text">应用程序 -&gt; 顶点函数 （a2v）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顶点函数-gt-片元函数（v2f）"><span class="nav-number">5.2.</span> <span class="nav-text">顶点函数 -&gt; 片元函数（v2f）</span></a></li></ol></li></div>
             
 
           </div>

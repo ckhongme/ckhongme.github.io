@@ -102,7 +102,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110808.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110809.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110810.png">
-<meta property="og:updated_time" content="2019-11-08T11:55:28.893Z">
+<meta property="og:updated_time" content="2019-11-14T06:20:03.073Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker">
 <meta name="twitter:description" content="自从SteamVR plugin for Unity（后面简称steamVR sdk）升级到2.0+版本之后，就引入了 SteamVR Input 输入系统，目的是将具体的输入设备与游戏逻辑分开，让开发者可以专心根据功能来开发，而不需要关注设备的具体按键； 但这个升级也改变了很多steamVR sdk原本的脚本，使得部分之前用 steamVR sdk 1.0+版本开发的同学一下子适应不过来，下面我">
@@ -410,7 +410,7 @@
 <h2 id="A-在Unity端的操作"><a href="#A-在Unity端的操作" class="headerlink" title="A.在Unity端的操作"></a>A.在Unity端的操作</h2><ol>
 <li>通过Unity的AssetStore获取最新版本的SteamVR sdk；</li>
 </ol>
-<p><strong>注意</strong>：如果导入新版的SDK之后，报了下面这个错：<br><code>[SteamVR] Error during OpenVR Init: Init_InterfaceNotFound</code><br>说明请求的接口不存在，steamVr runtime目前的版本不兼容sdk的接口，需要更新 runtime，这在下面对SteamVR Runtime的设置中回进行；</p>
+<p><strong>注意</strong>：如果导入新版的SDK之后，报了下面这个错：<br><code>[SteamVR] Error during OpenVR Init: Init_InterfaceNotFound</code><br>说明请求的接口不存在，steamVr runtime目前的版本不兼容sdk的接口，需要更新 runtime，这在下面对SteamVR Runtime的设置中会进行；</p>
 <ol start="2">
 <li>在Unity菜单栏下选中Window-&gt;SteamVR Input，在弹出的窗口选择 Yes;<div align="center">
  <img width="500" src="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110811.png">

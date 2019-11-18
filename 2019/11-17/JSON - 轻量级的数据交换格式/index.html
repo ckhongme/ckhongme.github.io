@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="UnityShader,">
+  <meta name="keywords" content="Web开发,JSON,JavaScript,数据交换格式,">
 
 
 
@@ -80,18 +80,18 @@
 
 
 
-<meta name="description" content="整体结构按照我的分法，UnityShader主要分成两大类，一类是表面着色器（Surface Shader)，一类是定点着色器和片元着色器（Vertex Shader &amp;amp; Fragment Shader）；后面我会再具体讲讲这两类UnityShader的区别； 现在先来看看UnityShader的整体结构： 123456Shader &amp;quot;Path/Name&amp;quot;&amp;#123;">
-<meta name="keywords" content="UnityShader">
+<meta name="description" content="在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义； JSON的起源在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换； XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有Jav">
+<meta name="keywords" content="Web开发,JSON,JavaScript,数据交换格式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="UnityShader - ShaderLab整体结构">
-<meta property="og:url" content="https://ckhongme.github.io/2019/04-05/UnityShader - ShaderLab基本结构/index.html">
+<meta property="og:title" content="JSON 轻量级的数据交换格式">
+<meta property="og:url" content="https://ckhongme.github.io/2019/11-17/JSON - 轻量级的数据交换格式/index.html">
 <meta property="og:site_name" content="喵将&#39;s博客">
-<meta property="og:description" content="整体结构按照我的分法，UnityShader主要分成两大类，一类是表面着色器（Surface Shader)，一类是定点着色器和片元着色器（Vertex Shader &amp;amp; Fragment Shader）；后面我会再具体讲讲这两类UnityShader的区别； 现在先来看看UnityShader的整体结构： 123456Shader &amp;quot;Path/Name&amp;quot;&amp;#123;">
+<meta property="og:description" content="在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义； JSON的起源在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换； XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有Jav">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-06T07:40:32.758Z">
+<meta property="og:updated_time" content="2019-11-18T06:15:47.907Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UnityShader - ShaderLab整体结构">
-<meta name="twitter:description" content="整体结构按照我的分法，UnityShader主要分成两大类，一类是表面着色器（Surface Shader)，一类是定点着色器和片元着色器（Vertex Shader &amp;amp; Fragment Shader）；后面我会再具体讲讲这两类UnityShader的区别； 现在先来看看UnityShader的整体结构： 123456Shader &amp;quot;Path/Name&amp;quot;&amp;#123;">
+<meta name="twitter:title" content="JSON 轻量级的数据交换格式">
+<meta name="twitter:description" content="在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义； JSON的起源在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换； XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有Jav">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://ckhongme.github.io/2019/04-05/UnityShader - ShaderLab基本结构/">
+  <link rel="canonical" href="https://ckhongme.github.io/2019/11-17/JSON - 轻量级的数据交换格式/">
 
 
 
 
 
-  <title>UnityShader - ShaderLab整体结构 | 喵将's博客</title>
+  <title>JSON 轻量级的数据交换格式 | 喵将's博客</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ckhongme.github.io/2019/04-05/UnityShader - ShaderLab基本结构/">
+    <link itemprop="mainEntityOfPage" href="https://ckhongme.github.io/2019/11-17/JSON - 轻量级的数据交换格式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ckhongme">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">UnityShader - ShaderLab整体结构</h1>
+          <h1 class="post-title" itemprop="name headline">JSON 轻量级的数据交换格式</h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-05T00:00:00+08:00">
-                2019-04-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-17T00:00:00+08:00">
+                2019-11-17
               </time>
             
 
@@ -348,8 +348,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Unity/" itemprop="url" rel="index">
-                    <span itemprop="name">Unity</span>
+                  <a href="/categories/标记语言/" itemprop="url" rel="index">
+                    <span itemprop="name">标记语言</span>
                   </a>
                 </span>
 
@@ -390,94 +390,40 @@
       
 
       
-        <h1 id="整体结构"><a href="#整体结构" class="headerlink" title="整体结构"></a>整体结构</h1><p>按照我的分法，UnityShader主要分成两大类，一类是表面着色器（Surface Shader)，一类是定点着色器和片元着色器（Vertex Shader &amp; Fragment Shader）；<br>后面我会再具体讲讲这两类UnityShader的区别；</p>
-<p>现在先来看看UnityShader的整体结构：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Shader &quot;Path/Name&quot;</span><br><span class="line">&#123;</span><br><span class="line">    Properties &#123; // 第一部分 &#125;</span><br><span class="line">    SubShader &#123; // 第二部分 &#125;</span><br><span class="line">    Fallback &quot;Diffuse&quot; // 第三部分</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><em>Shader关键字后面跟一个字符串对该着色器进行命名，可以通过添加Path加以分类；</em></p>
-<h2 id="Properties-属性（第一部分）"><a href="#Properties-属性（第一部分）" class="headerlink" title="Properties 属性（第一部分）"></a>Properties 属性（第一部分）</h2><p><strong>1.属性的作用</strong>：充当数据接口，将外部的数据资源引入，以供着色器内部使用；<br><strong>2.属性的使用</strong>：</p>
-<ul>
-<li><strong>外部设置</strong>：通过声明属性，可以方便在Hierarchy面板对Shader的参数进行设置；</li>
-<li><strong>内部访问</strong>：通过在Cg代码片中定义和这些属性类型相匹配，名字相同的变量，可以在Shader内部中访问；<em>（cg代码块后面会解释）</em></li>
+        <p>在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义；</p>
+<h2 id="JSON的起源"><a href="#JSON的起源" class="headerlink" title="JSON的起源"></a>JSON的起源</h2><p>在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换；</p>
+<p>XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有JavaScript的大宗师(Yoda)之称的Douglas Crockford，就设计了一种同样基于文本的数据交换格式Json；</p>
+<h2 id="什么是JSON"><a href="#什么是JSON" class="headerlink" title="什么是JSON"></a>什么是JSON</h2><p>Json（JavaScript Object Notation）是一种轻量级的数据交换格式。<br>JavaScript对象标记语言， 是JS对象的字符串表示法，它使用文本表示一个 JS 对象的信息，本质是一个字符串；采用完全独立于语言的文本格式；</p>
+<h2 id="JSON的作用"><a href="#JSON的作用" class="headerlink" title="JSON的作用"></a>JSON的作用</h2><p>Json可以将 JavaScript对象 中表示的一组数据转换为字符串，然后就可以在网络或者程序之间轻松地传递这个字符串，并在需要的时候将它还原为各编程语言所支持的数据格式。</p>
+<h2 id="JSON的优点"><a href="#JSON的优点" class="headerlink" title="JSON的优点"></a>JSON的优点</h2><ol>
+<li>定位是数据交换格式，设计目的就是在应用程序间传递结构化信息；</li>
+<li>具有更加清晰的层次结构，语法少，结构可预测，更容易被人类和计算机理解；</li>
+<li><strong>超轻量级</strong>：具有更加简单的语法格式，没有严格的闭合标签，所以在结构上少了很多字符，有效数据率更高，减少了在同等数据流量的情况下，网络的传输压力，节约了传输数据所占用的带宽，因此给网络传输带来了很大的便利； </li>
+<li>使用方便，有JavaScript解析器就可以直接使用JSON；</li>
+</ol>
+<h2 id="JSON的语法规则"><a href="#JSON的语法规则" class="headerlink" title="JSON的语法规则"></a>JSON的语法规则</h2><ul>
+<li>数据在<strong>键值对</strong>中 </li>
+<li>数据由<strong>逗号</strong>分隔</li>
+<li>大括号保存<strong>对象</strong></li>
+<li>中括号保存<strong>数组</strong></li>
 </ul>
-<p><strong>3.属性的格式</strong>：<br>在Properties语义块中声明属性，需要指定默认值，声明后会出现在材质面板中；<br><code>_属性名称 （“显示名称”，属性类型）= 默认值</code></p>
-<p>例如声明一个2D类型的贴图变量：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _MainTex(&quot;Main Texture&quot;, 2D) = &quot;black&quot; &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>4.常见的属性类型</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>Texture贴图相关</th>
-<th>变量相关</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>2D(纹理贴图)</td>
-<td>Color(颜色)</td>
-</tr>
-<tr>
-<td>3D(纹理贴图)</td>
-<td>Vector(表示4个元素的向量，xyzw)</td>
-</tr>
-<tr>
-<td>Cube(三维纹理)</td>
-<td>int</td>
-</tr>
-<tr>
-<td></td>
-<td>float</td>
-</tr>
-<tr>
-<td></td>
-<td>Range(表示范围值)</td>
-</tr>
-</tbody></table>
-<p><em>更多具体的书写格式，请查看我的另外一篇文章：</em><a href="https://ckhongme.github.io/2019/04-10/UnityShader%20-%20UnityShader%E5%B8%B8%E7%94%A8%E6%9C%AF%E8%AF%AD%E6%9F%A5%E8%AF%A2/">UnityShader常用术语查询</a></p>
-<h2 id="SubShader-子着色器-（第二部分）"><a href="#SubShader-子着色器-（第二部分）" class="headerlink" title="SubShader 子着色器 （第二部分）"></a>SubShader 子着色器 （第二部分）</h2><p>SubShader可以有多个，但至少要有一个；<br>加载时，Unity会选择第一个能够在目标平台上运行的SubShader；</p>
-<p>SubShader的基本结构：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SubShader</span><br><span class="line">&#123;</span><br><span class="line">    标签设置 [可选]</span><br><span class="line">    LOD设置 [可选]</span><br><span class="line">    渲染状态设置 [可选]</span><br><span class="line">    cg代码块</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="标签设置-可选"><a href="#标签设置-可选" class="headerlink" title="标签设置 [可选]"></a>标签设置 [可选]</h3><p><strong>标签的作用</strong>：<br>是UnityShader和渲染引擎之间的沟通桥梁，硬件通过判断Tags来决定何时应该调用该子着色器；<br><strong>标签的格式</strong>：<br>键值对（键和值都是字符串类型）<br><code>Tags { &quot;键1&quot; = &quot;值1&quot;  &quot;键2&quot; = &quot;值2&quot;}</code><br>例如：规定在绘制透明或者半透明图形时调用，指定渲染队列为透明队列，且不受投影的影响；<br><code>Tags { &quot;RenderType&quot; = &quot;Transparent&quot; &quot;Queue&quot; = &quot;Transparent&quot;  &quot;IgnoreProjector&quot; = &quot;True&quot;  }</code></p>
-<h3 id="LOD设置-可选"><a href="#LOD设置-可选" class="headerlink" title="LOD设置 [可选]"></a>LOD设置 [可选]</h3><p><strong>LOD的作用</strong>：Level of Detail的缩写，当系统设定的最大LOD小于SubShader制定的LOD时，该SubShader不可用；</p>
-<h3 id="渲染状态设置-可选"><a href="#渲染状态设置-可选" class="headerlink" title="渲染状态设置 [可选]"></a>渲染状态设置 [可选]</h3><p><strong>渲染状态的作用</strong>：决定了一个潜在像素是否被扔掉，或写入帧内；<br><strong>设置状态的格式</strong>：<br><code>状态名 状态值</code><br><strong>常见的状态设置</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">Cull Off</th>
-<th align="left">ZWrite Off</th>
-<th align="left">ZTest Off</th>
-<th align="left">Blend On</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">关闭背面裁剪</td>
-<td align="left">关闭深度写入</td>
-<td align="left">关闭深度测试</td>
-<td align="left">开启混合模式</td>
-</tr>
-<tr>
-<td align="left">半透需要看到背面</td>
-<td align="left">不遮挡其他东西时需要关</td>
-<td align="left">/</td>
-<td align="left">/</td>
-</tr>
-</tbody></table>
-<p>如果在SubShader进行设置的话，将会应用于所有的Pass，可以在Pass中再次定义覆盖；</p>
-<h3 id="CG代码块"><a href="#CG代码块" class="headerlink" title="CG代码块"></a>CG代码块</h3><p>着色器代码要写在 <strong>CGPROGRAM</strong> 和 <strong>ENDCG</strong> 之间；</p>
-<ul>
-<li>表面着色器不需要定义Pass，所以cg代码直接写在SubShader中；</li>
-<li>顶点/片元着色器需要定义Pass，所以cg代码写在SubShader定义的Pass语义块中；</li>
+<h2 id="JSON值的类型"><a href="#JSON值的类型" class="headerlink" title="JSON值的类型"></a>JSON值的类型</h2><ul>
+<li>number（整数或浮点数）</li>
+<li>boolean</li>
+<li>string</li>
+<li>null</li>
+<li>数组</li>
+<li>对象</li>
 </ul>
-<p><strong>CG代码块的格式</strong>：</p>
-<p>SurfaceShader的写法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CGPROGRAM</span><br><span class="line"></span><br><span class="line">编译指令（表明写的是SufrfaceShader）</span><br><span class="line">对应的CG变量</span><br><span class="line">Input结构体</span><br><span class="line">表面着色函数</span><br><span class="line"></span><br><span class="line">ENDCG</span><br></pre></td></tr></table></figure>
-
-<p>Vertex/Fragment Shader的写法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">SubShader</span><br><span class="line">&#123;</span><br><span class="line">	Pass</span><br><span class="line">	&#123;</span><br><span class="line">		Name &quot;Pass名称&quot;</span><br><span class="line">		Tags&#123;&#125;</span><br><span class="line">		CGPROGRAM</span><br><span class="line">		...(着色器代码)</span><br><span class="line">		ENDCG</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><em>具体的着色器代码，将会在后面对表面着色器以及顶点/片元着色单独的文章中进行学习，这里只是简单提一下两者的区别；</em></p>
-<h2 id="第三部分-Fallback-回滚"><a href="#第三部分-Fallback-回滚" class="headerlink" title="第三部分   Fallback 回滚"></a>第三部分   Fallback 回滚</h2><p><strong>Fallback的作用</strong>：设置最低级别的Pass；<br>相当于替代方案，当没有找到合适的SubShader时会调用；<br><code>Fallback &quot;name&quot; 或者 Fallback Off</code></p>
+<h2 id="JSON的结构"><a href="#JSON的结构" class="headerlink" title="JSON的结构"></a>JSON的结构</h2><h4 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h4><p>在js中表示为“{}”括起来的内容，数据结构为 {key：value, key：value,…}的键值对的结构；<br>在面向对象的语言中，key为对象的属性，value为对应的属性值，取值方法为 对象.key 获取属性值；<br>键名可以用整数和字符串来表示，值的类型可以是任意类型；</p>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><p>数组在js中是中括号“[]”括起来的内容，数据结构为 [“java”,”javascript”,”vb”,…]；<br>取值方式和所有语言中一样，使用索引获取；</p>
+<h2 id="JSON的其他信息"><a href="#JSON的其他信息" class="headerlink" title="JSON的其他信息"></a>JSON的其他信息</h2><ul>
+<li>最初的命名为JSML（JavaScript Markup Language），但是缩写被JaveSpeech的标记语言先用了，所以才使用 JaveScript Object Notation 命名；</li>
+<li>曾被指责“JSON只是重新发明 XML”，对此， Douglas Crockford的回应是：“重造轮子的好处是可以得到一个更好的轮子”；</li>
+<li>刚开始JSON信息与JS解析器是有冲突的，因为JSON有可能会使用了一些JS的关键字，为此，所有的JSON键名都被加上了引号；</li>
+<li>目前JSON 是应用程序在网络之间通信的首选协议格式；</li>
+</ul>
+<p>对JSON起源有兴趣的可以查看：<a href="https://linux.cn/article-10440-1.html" rel="external nofollow noopener noreferrer" target="_blank">JSON 的兴起与崛起</a><br>JSON的官方说明：<a href="http://www.json.org/xml.html" rel="external nofollow noopener noreferrer" target="_blank">JSON: The Fat-Free Alternative to XML</a></p>
 
       
     </div>
@@ -495,7 +441,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/UnityShader/" rel="tag"># UnityShader</a>
+            <a href="/tags/Web开发/" rel="tag"># Web开发</a>
+          
+            <a href="/tags/JSON/" rel="tag"># JSON</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/数据交换格式/" rel="tag"># 数据交换格式</a>
           
         </div>
       
@@ -508,8 +460,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04-01/UnityShader - ShaderLab简介/" rel="next" title="UnityShader - ShaderLab简介">
-                <i class="fa fa-chevron-left"></i> UnityShader - ShaderLab简介
+              <a href="/2019/11-06/使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker/" rel="next" title="使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker">
+                <i class="fa fa-chevron-left"></i> 使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker
               </a>
             
           </div>
@@ -518,8 +470,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04-10/UnityShader - UnityShader常用术语查询/" rel="prev" title="UnityShader - 常用术语查询">
-                UnityShader - 常用术语查询 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/11-18/LitJson - .Net平台的类库/" rel="prev" title="LitJson - .Net平台的类库">
+                LitJson - .Net平台的类库 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -696,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#整体结构"><span class="nav-number">1.</span> <span class="nav-text">整体结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Properties-属性（第一部分）"><span class="nav-number">1.1.</span> <span class="nav-text">Properties 属性（第一部分）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SubShader-子着色器-（第二部分）"><span class="nav-number">1.2.</span> <span class="nav-text">SubShader 子着色器 （第二部分）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标签设置-可选"><span class="nav-number">1.2.1.</span> <span class="nav-text">标签设置 [可选]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LOD设置-可选"><span class="nav-number">1.2.2.</span> <span class="nav-text">LOD设置 [可选]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#渲染状态设置-可选"><span class="nav-number">1.2.3.</span> <span class="nav-text">渲染状态设置 [可选]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CG代码块"><span class="nav-number">1.2.4.</span> <span class="nav-text">CG代码块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三部分-Fallback-回滚"><span class="nav-number">1.3.</span> <span class="nav-text">第三部分   Fallback 回滚</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的起源"><span class="nav-number">1.</span> <span class="nav-text">JSON的起源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是JSON"><span class="nav-number">2.</span> <span class="nav-text">什么是JSON</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的作用"><span class="nav-number">3.</span> <span class="nav-text">JSON的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的优点"><span class="nav-number">4.</span> <span class="nav-text">JSON的优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的语法规则"><span class="nav-number">5.</span> <span class="nav-text">JSON的语法规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON值的类型"><span class="nav-number">6.</span> <span class="nav-text">JSON值的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的结构"><span class="nav-number">7.</span> <span class="nav-text">JSON的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对象"><span class="nav-number">7.0.1.</span> <span class="nav-text">对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组"><span class="nav-number">7.0.2.</span> <span class="nav-text">数组</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的其他信息"><span class="nav-number">8.</span> <span class="nav-text">JSON的其他信息</span></a></li></div>
             
 
           </div>

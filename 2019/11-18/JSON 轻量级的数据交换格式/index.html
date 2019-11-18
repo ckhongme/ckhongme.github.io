@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="Code, C#, Unity, Shader">
+  <meta name="keywords" content="Web开发,JSON,JavaScript,数据交换格式,">
 
 
 
@@ -80,16 +80,18 @@
 
 
 
-<meta name="description" content="现在只要静静地等风到来~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="喵将&#39;s博客">
-<meta property="og:url" content="https://ckhongme.github.io/archives/index.html">
+<meta name="description" content="在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义； JSON的起源在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换； XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有Jav">
+<meta name="keywords" content="Web开发,JSON,JavaScript,数据交换格式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSON 轻量级的数据交换格式">
+<meta property="og:url" content="https://ckhongme.github.io/2019/11-18/JSON 轻量级的数据交换格式/index.html">
 <meta property="og:site_name" content="喵将&#39;s博客">
-<meta property="og:description" content="现在只要静静地等风到来~">
+<meta property="og:description" content="在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义； JSON的起源在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换； XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有Jav">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-18T05:36:23.489Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="喵将&#39;s博客">
-<meta name="twitter:description" content="现在只要静静地等风到来~">
+<meta name="twitter:title" content="JSON 轻量级的数据交换格式">
+<meta name="twitter:description" content="在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义； JSON的起源在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换； XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有Jav">
 
 
 
@@ -119,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://ckhongme.github.io/archives/">
+  <link rel="canonical" href="https://ckhongme.github.io/2019/11-18/JSON 轻量级的数据交换格式/">
 
 
 
 
 
-  <title>归档 | 喵将's博客</title>
+  <title>JSON 轻量级的数据交换格式 | 喵将's博客</title>
   
 
 
@@ -144,7 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,391 +282,213 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ckhongme.github.io/2019/11-18/JSON 轻量级的数据交换格式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ckhongme">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/catjiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="喵将's博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">JSON 轻量级的数据交换格式</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-18T00:00:00+08:00">
+                2019-11-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 19 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/标记语言/" itemprop="url" rel="index">
+                    <span itemprop="name">标记语言</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11-18/JSON 轻量级的数据交换格式/" itemprop="url">
-              
-                <span itemprop="name">JSON 轻量级的数据交换格式</span>
-              
-            </a>
-        
-      </h2>
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>阅读数
+            </span>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-11-18T00:00:00+08:00" content="2019-11-18">
-          11-18
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/11-06/使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker/" itemprop="url">
-              
-                <span itemprop="name">使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-11-06T00:00:00+08:00" content="2019-11-06">
-          11-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05-29/基于Oculus Quest的VR开发：如何在Unity下开发Quest的App/" itemprop="url">
-              
-                <span itemprop="name">基于Oculus Quest的VR开发：如何在Unity下开发Quest的App</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-29T00:00:00+08:00" content="2019-05-29">
-          05-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>在了解一样新事物时，应该从它的起源开始了解，去理解它为什么被创造出来，有什么意义；</p>
+<h2 id="JSON的起源"><a href="#JSON的起源" class="headerlink" title="JSON的起源"></a>JSON的起源</h2><p>在Json出现之前，网络传输主要通过纯文本格式（便于网络传输）的XML，然而XML不太适合数据交换；</p>
+<p>XML的定位是标记语言，面向的是文档，它的一系列规范，例如DTD，XSD，XPath等就使得学习成本大大增加了，很难简单使用，它的内容有很多尖括号和冗长的标签，难以定位实际要传输的信息；于是，有JavaScript的大宗师(Yoda)之称的Douglas Crockford，就设计了一种同样基于文本的数据交换格式Json；</p>
+<h2 id="什么是JSON"><a href="#什么是JSON" class="headerlink" title="什么是JSON"></a>什么是JSON</h2><p>Json（JavaScript Object Notation）是一种轻量级的数据交换格式。<br>JavaScript对象标记语言， 是JS对象的字符串表示法，它使用文本表示一个 JS 对象的信息，本质是一个字符串；采用完全独立于语言的文本格式；</p>
+<h2 id="JSON的作用"><a href="#JSON的作用" class="headerlink" title="JSON的作用"></a>JSON的作用</h2><p>Json可以将 JavaScript对象 中表示的一组数据转换为字符串，然后就可以在网络或者程序之间轻松地传递这个字符串，并在需要的时候将它还原为各编程语言所支持的数据格式。</p>
+<h2 id="JSON的优点"><a href="#JSON的优点" class="headerlink" title="JSON的优点"></a>JSON的优点</h2><ol>
+<li>定位是数据交换格式，设计目的就是在应用程序间传递结构化信息；</li>
+<li>具有更加清晰的层次结构，语法少，结构可预测，更容易被人类和计算机理解；</li>
+<li><strong>超轻量级</strong>：具有更加简单的语法格式，没有严格的闭合标签，所以在结构上少了很多字符，有效数据率更高，减少了在同等数据流量的情况下，网络的传输压力，节约了传输数据所占用的带宽，因此给网络传输带来了很大的便利； </li>
+<li>使用方便，有JavaScript解析器就可以直接使用JSON；</li>
+</ol>
+<h2 id="JSON的语法规则"><a href="#JSON的语法规则" class="headerlink" title="JSON的语法规则"></a>JSON的语法规则</h2><ul>
+<li>数据在<strong>键值对</strong>中 </li>
+<li>数据由<strong>逗号</strong>分隔</li>
+<li>大括号保存<strong>对象</strong></li>
+<li>中括号保存<strong>数组</strong></li>
+</ul>
+<h2 id="JSON值的类型"><a href="#JSON值的类型" class="headerlink" title="JSON值的类型"></a>JSON值的类型</h2><ul>
+<li>number（整数或浮点数）</li>
+<li>boolean</li>
+<li>string</li>
+<li>null</li>
+<li>数组</li>
+<li>对象</li>
+</ul>
+<h2 id="JSON的结构"><a href="#JSON的结构" class="headerlink" title="JSON的结构"></a>JSON的结构</h2><h4 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h4><p>在js中表示为“{}”括起来的内容，数据结构为 {key：value, key：value,…}的键值对的结构；<br>在面向对象的语言中，key为对象的属性，value为对应的属性值，取值方法为 对象.key 获取属性值；<br>键名可以用整数和字符串来表示，值的类型可以是任意类型；</p>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><p>数组在js中是中括号“[]”括起来的内容，数据结构为 [“java”,”javascript”,”vb”,…]；<br>取值方式和所有语言中一样，使用索引获取；</p>
+<h2 id="JSON的其他信息"><a href="#JSON的其他信息" class="headerlink" title="JSON的其他信息"></a>JSON的其他信息</h2><ul>
+<li>最初的命名为JSML（JavaScript Markup Language），但是缩写被JaveSpeech的标记语言先用了，所以才使用 JaveScript Object Notation 命名；</li>
+<li>曾被指责“JSON只是重新发明 XML”，对此， Douglas Crockford的回应是：“重造轮子的好处是可以得到一个更好的轮子”；</li>
+<li>刚开始JSON信息与JS解析器是有冲突的，因为JSON有可能会使用了一些JS的关键字，为此，所有的JSON键名都被加上了引号；</li>
+<li>目前JSON 是应用程序在网络之间通信的首选协议格式；</li>
+</ul>
+<p>对JSON起源有兴趣的可以查看：<a href="https://linux.cn/article-10440-1.html" rel="external nofollow noopener noreferrer" target="_blank">JSON 的兴起与崛起</a><br>JSON的官方说明：<a href="http://www.json.org/xml.html" rel="external nofollow noopener noreferrer" target="_blank">JSON: The Fat-Free Alternative to XML</a></p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05-24/基于HTCVive的VR开发：SteamVR 和 Vive Input Utility/" itemprop="url">
-              
-                <span itemprop="name">基于HTCVive的VR开发：SteamVR 和 Vive Input Utility</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-24T00:00:00+08:00" content="2019-05-24">
-          05-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04-10/UnityShader - UnityShader常用术语查询/" itemprop="url">
-              
-                <span itemprop="name">UnityShader - 常用术语查询</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-10T00:00:00+08:00" content="2019-04-10">
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04-05/UnityShader - ShaderLab基本结构/" itemprop="url">
-              
-                <span itemprop="name">UnityShader - ShaderLab整体结构</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-05T00:00:00+08:00" content="2019-04-05">
-          04-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04-01/UnityShader - ShaderLab简介/" itemprop="url">
-              
-                <span itemprop="name">UnityShader - ShaderLab简介</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-01T00:00:00+08:00" content="2019-04-01">
-          04-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01-30/Web开发的前端和后端/" itemprop="url">
-              
-                <span itemprop="name">Web开发的前端和后端</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-30T00:00:00+08:00" content="2019-01-30">
-          01-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01-27/PHP 简介/" itemprop="url">
-              
-                <span itemprop="name">PHP 简介</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-27T00:00:00+08:00" content="2019-01-27">
-          01-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01-21/CSS 简介/" itemprop="url">
-              
-                <span itemprop="name">CSS 简介</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-21T00:00:00+08:00" content="2019-01-21">
-          01-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Web开发/" rel="tag"># Web开发</a>
+          
+            <a href="/tags/JSON/" rel="tag"># JSON</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/数据交换格式/" rel="tag"># 数据交换格式</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11-06/使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker/" rel="next" title="使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker">
+                <i class="fa fa-chevron-left"></i> 使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -672,6 +496,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -692,8 +520,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -797,6 +634,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的起源"><span class="nav-number">1.</span> <span class="nav-text">JSON的起源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是JSON"><span class="nav-number">2.</span> <span class="nav-text">什么是JSON</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的作用"><span class="nav-number">3.</span> <span class="nav-text">JSON的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的优点"><span class="nav-number">4.</span> <span class="nav-text">JSON的优点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的语法规则"><span class="nav-number">5.</span> <span class="nav-text">JSON的语法规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON值的类型"><span class="nav-number">6.</span> <span class="nav-text">JSON值的类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的结构"><span class="nav-number">7.</span> <span class="nav-text">JSON的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#对象"><span class="nav-number">7.0.1.</span> <span class="nav-text">对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组"><span class="nav-number">7.0.2.</span> <span class="nav-text">数组</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON的其他信息"><span class="nav-number">8.</span> <span class="nav-text">JSON的其他信息</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -959,6 +812,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

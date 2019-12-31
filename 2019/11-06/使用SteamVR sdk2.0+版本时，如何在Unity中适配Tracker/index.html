@@ -102,7 +102,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110808.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110809.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/ckhongme/HexoBlog/master/source/images/VR%20Development/HTC%20Vive/SteamVR2.0/SteamVR2.0_19110810.png">
-<meta property="og:updated_time" content="2019-11-14T06:20:03.073Z">
+<meta property="og:updated_time" content="2019-12-31T08:51:16.777Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用SteamVR sdk2.0+版本时，如何在Unity中适配Tracker">
 <meta name="twitter:description" content="自从SteamVR plugin for Unity（后面简称steamVR sdk）升级到2.0+版本之后，就引入了 SteamVR Input 输入系统，目的是将具体的输入设备与游戏逻辑分开，让开发者可以专心根据功能来开发，而不需要关注设备的具体按键； 但这个升级也改变了很多steamVR sdk原本的脚本，使得部分之前用 steamVR sdk 1.0+版本开发的同学一下子适应不过来，下面我">
@@ -116,7 +116,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -197,8 +197,8 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-首页">
-          <a href="/" rel="section">
+        <li class="menu-item menu-item-home">
+          <a href="/home/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
@@ -207,7 +207,7 @@
         </li>
       
         
-        <li class="menu-item menu-item-目录">
+        <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
@@ -407,6 +407,7 @@
       
         <p>自从SteamVR plugin for Unity（后面简称steamVR sdk）升级到2.0+版本之后，就引入了 SteamVR Input 输入系统，目的是将具体的输入设备与游戏逻辑分开，让开发者可以专心根据功能来开发，而不需要关注设备的具体按键；</p>
 <p>但这个升级也改变了很多steamVR sdk原本的脚本，使得部分之前用 steamVR sdk 1.0+版本开发的同学一下子适应不过来，下面我主要讲讲使用 steamVR sdk2.0+版本时，要如何在Unity中适配 Tracker；</p>
+<p>本文基于Unity2018.4.12f1版本以及SteamVR Rumtime 1.8.19版本；</p>
 <h2 id="A-在Unity端的操作"><a href="#A-在Unity端的操作" class="headerlink" title="A.在Unity端的操作"></a>A.在Unity端的操作</h2><ol>
 <li>通过Unity的AssetStore获取最新版本的SteamVR sdk；</li>
 </ol>
@@ -580,9 +581,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -604,7 +605,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -688,6 +689,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -756,11 +764,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     

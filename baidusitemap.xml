@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ckhongme.github.io/2019/12-31/%E5%9F%BA%E4%BA%8ESteamVR%201.9.16%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AETracker/</loc>
+    <lastmod>2019-12-31</lastmod>
+  </url>  <url>
+    <loc>https://ckhongme.github.io/2019/11-06/%E4%BD%BF%E7%94%A8SteamVR%20sdk2.0+%E7%89%88%E6%9C%AC%E6%97%B6%EF%BC%8C%E5%A6%82%E4%BD%95%E5%9C%A8Unity%E4%B8%AD%E9%80%82%E9%85%8DTracker/</loc>
+    <lastmod>2019-12-31</lastmod>
+  </url>  <url>
+    <loc>https://ckhongme.github.io/2019/12-26/Git%E6%98%AF%E4%BB%80%E4%B9%88/</loc>
+    <lastmod>2019-12-30</lastmod>
+  </url>  <url>
+    <loc>https://ckhongme.github.io/2018/12-25/Git%20+%20Hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2019-12-27</lastmod>
+  </url>  <url>
     <loc>https://ckhongme.github.io/2019/04-01/UnityShader%20-%20ShaderLab%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2019-11-18</lastmod>
   </url>  <url>
@@ -9,9 +21,6 @@
   </url>  <url>
     <loc>https://ckhongme.github.io/2019/11-18/LitJson%20-%20.Net%E5%B9%B3%E5%8F%B0%E7%9A%84%E7%B1%BB%E5%BA%93/</loc>
     <lastmod>2019-11-18</lastmod>
-  </url>  <url>
-    <loc>https://ckhongme.github.io/2019/11-06/%E4%BD%BF%E7%94%A8SteamVR%20sdk2.0+%E7%89%88%E6%9C%AC%E6%97%B6%EF%BC%8C%E5%A6%82%E4%BD%95%E5%9C%A8Unity%E4%B8%AD%E9%80%82%E9%85%8DTracker/</loc>
-    <lastmod>2019-11-14</lastmod>
   </url>  <url>
     <loc>https://ckhongme.github.io/2019/05-29/%E5%9F%BA%E4%BA%8EOculus%20Quest%E7%9A%84VR%E5%BC%80%E5%8F%91%EF%BC%9A%E5%A6%82%E4%BD%95%E5%9C%A8Unity%E4%B8%8B%E5%BC%80%E5%8F%91Quest%E7%9A%84App/</loc>
     <lastmod>2019-11-08</lastmod>
@@ -40,22 +49,19 @@
     <loc>https://ckhongme.github.io/2019/05-24/%E5%9F%BA%E4%BA%8EHTCVive%E7%9A%84VR%E5%BC%80%E5%8F%91%EF%BC%9ASteamVR%20%E5%92%8C%20Vive%20Input%20Utility/</loc>
     <lastmod>2019-08-01</lastmod>
   </url>  <url>
-    <loc>https://ckhongme.github.io/2018/12-27/Python%20%E7%AE%80%E4%BB%8B/</loc>
-    <lastmod>2019-08-01</lastmod>
-  </url>  <url>
     <loc>https://ckhongme.github.io/2019/01-27/PHP%20%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2019-08-01</lastmod>
   </url>  <url>
-    <loc>https://ckhongme.github.io/2018/12-25/Git%20+%20Hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://ckhongme.github.io/2018/12-27/Python%20%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2019-08-01</lastmod>
+  </url>  <url>
+    <loc>https://ckhongme.github.io/2019/01-15/HTML%20%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2019-08-01</lastmod>
   </url>  <url>
     <loc>https://ckhongme.github.io/2019/01-04/JavaScript%20%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2019-08-01</lastmod>
   </url>  <url>
     <loc>https://ckhongme.github.io/2018/12-26/Markdown%20%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2019-08-01</lastmod>
-  </url>  <url>
-    <loc>https://ckhongme.github.io/2019/01-15/HTML%20%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2019-08-01</lastmod>
   </url>  <url>
     <loc>https://ckhongme.github.io/2019/01-21/CSS%20%E7%AE%80%E4%BB%8B/</loc>

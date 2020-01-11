@@ -69,7 +69,7 @@
 
 
 
-  <meta name="keywords" content="git,hexo,blog,">
+  <meta name="keywords" content="Socket，网络通信,">
 
 
 
@@ -80,18 +80,18 @@
 
 
 
-<meta name="description" content="搭建博客，一来想着用博客可以记录一下自己的笔记，二来想通过搭建博客熟悉一下GitHub的使用。 结合Git和Hexo搭建博客NodeJs环境搭建安装node：nodejs 安装hexo选择一个空目录，右键git-bash here，输入以下命令安装hexo到全局： 123$ npm install -g hexo-cli                        //使用npm全局安装hexo">
-<meta name="keywords" content="git,hexo,blog">
+<meta name="description" content="要了解网络通信，就要了解Socket是什么； Socket的起源最初是为Unix系统开发的网络通信接口；计算机上可以有多个网络应用程序，为了区分不同的应用程序进程，找到正在进行网络通信的进程，就需要通过socket来标识；同时，socket可以用来发送和接受数据包；客户端和服务器端的一个通信进程，需要两个进程组成，双方通过socket进行通信，并且通信的规则只能采用同一种协议； 什么是Socket">
+<meta name="keywords" content="Socket，网络通信">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git + Hexo 博客搭建">
-<meta property="og:url" content="https://ckhongme.github.io/2018/12-25/Git + Hexo 博客搭建/index.html">
+<meta property="og:title" content="网络通信接口-Socket">
+<meta property="og:url" content="https://ckhongme.github.io/2020/01-04/网络通信接口-Socket/index.html">
 <meta property="og:site_name" content="喵将&#39;s博客">
-<meta property="og:description" content="搭建博客，一来想着用博客可以记录一下自己的笔记，二来想通过搭建博客熟悉一下GitHub的使用。 结合Git和Hexo搭建博客NodeJs环境搭建安装node：nodejs 安装hexo选择一个空目录，右键git-bash here，输入以下命令安装hexo到全局： 123$ npm install -g hexo-cli                        //使用npm全局安装hexo">
+<meta property="og:description" content="要了解网络通信，就要了解Socket是什么； Socket的起源最初是为Unix系统开发的网络通信接口；计算机上可以有多个网络应用程序，为了区分不同的应用程序进程，找到正在进行网络通信的进程，就需要通过socket来标识；同时，socket可以用来发送和接受数据包；客户端和服务器端的一个通信进程，需要两个进程组成，双方通过socket进行通信，并且通信的规则只能采用同一种协议； 什么是Socket">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-27T01:46:15.502Z">
+<meta property="og:updated_time" content="2020-01-11T06:37:56.451Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git + Hexo 博客搭建">
-<meta name="twitter:description" content="搭建博客，一来想着用博客可以记录一下自己的笔记，二来想通过搭建博客熟悉一下GitHub的使用。 结合Git和Hexo搭建博客NodeJs环境搭建安装node：nodejs 安装hexo选择一个空目录，右键git-bash here，输入以下命令安装hexo到全局： 123$ npm install -g hexo-cli                        //使用npm全局安装hexo">
+<meta name="twitter:title" content="网络通信接口-Socket">
+<meta name="twitter:description" content="要了解网络通信，就要了解Socket是什么； Socket的起源最初是为Unix系统开发的网络通信接口；计算机上可以有多个网络应用程序，为了区分不同的应用程序进程，找到正在进行网络通信的进程，就需要通过socket来标识；同时，socket可以用来发送和接受数据包；客户端和服务器端的一个通信进程，需要两个进程组成，双方通过socket进行通信，并且通信的规则只能采用同一种协议； 什么是Socket">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://ckhongme.github.io/2018/12-25/Git + Hexo 博客搭建/">
+  <link rel="canonical" href="https://ckhongme.github.io/2020/01-04/网络通信接口-Socket/">
 
 
 
 
 
-  <title>Git + Hexo 博客搭建 | 喵将's博客</title>
+  <title>网络通信接口-Socket | 喵将's博客</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ckhongme.github.io/2018/12-25/Git + Hexo 博客搭建/">
+    <link itemprop="mainEntityOfPage" href="https://ckhongme.github.io/2020/01-04/网络通信接口-Socket/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ckhongme">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git + Hexo 博客搭建</h1>
+          <h1 class="post-title" itemprop="name headline">网络通信接口-Socket</h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-25T00:00:00+08:00">
-                2018-12-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-04T00:00:00+08:00">
+                2020-01-04
               </time>
             
 
@@ -348,8 +348,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git相关/" itemprop="url" rel="index">
-                    <span itemprop="name">Git相关</span>
+                  <a href="/categories/计算机网络/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机网络</span>
                   </a>
                 </span>
 
@@ -390,28 +390,39 @@
       
 
       
-        <p>搭建博客，一来想着用博客可以记录一下自己的笔记，二来想通过搭建博客熟悉一下GitHub的使用。</p>
-<h2 id="结合Git和Hexo搭建博客"><a href="#结合Git和Hexo搭建博客" class="headerlink" title="结合Git和Hexo搭建博客"></a>结合Git和Hexo搭建博客</h2><h3 id="NodeJs环境搭建"><a href="#NodeJs环境搭建" class="headerlink" title="NodeJs环境搭建"></a>NodeJs环境搭建</h3><p>安装node：<a href="https://nodejs.org/en/" rel="external nofollow noopener noreferrer" target="_blank">nodejs</a></p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>选择一个空目录，右键git-bash here，输入以下命令安装hexo到全局：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli                        //使用npm全局安装hexo命令行工具</span><br><span class="line">$ hexo init                                      //初始化一个新的博客</span><br><span class="line">$ npm install                                    //安装npm包</span><br></pre></td></tr></table></figure>
+        <p>要了解网络通信，就要了解Socket是什么；</p>
+<h2 id="Socket的起源"><a href="#Socket的起源" class="headerlink" title="Socket的起源"></a>Socket的起源</h2><p>最初是为Unix系统开发的网络通信接口；<br>计算机上可以有多个网络应用程序，为了区分不同的应用程序进程，找到正在进行网络通信的进程，就需要通过socket来标识；<br>同时，socket可以用来发送和接受数据包；<br>客户端和服务器端的一个通信进程，需要两个进程组成，双方通过socket进行通信，并且通信的规则只能采用同一种协议；</p>
+<h2 id="什么是Socket？"><a href="#什么是Socket？" class="headerlink" title="什么是Socket？"></a>什么是Socket？</h2><p>socket，也叫套接字，是网络通信架构的基础；网络协议很多都是基于socket的；</p>
+<h4 id="通信接口"><a href="#通信接口" class="headerlink" title="通信接口"></a>通信接口</h4><ul>
+<li>本质是编程接口(API)，应用层和传输层之间的接口；</li>
+<li>是对TCP/IP的封装，也就是TCP/IP提供给程序员做网络开发所用的接口，是目前支持TCP/IP协议网络通信最为通用的API；</li>
+<li>通过socket，可以跳过复杂的网络底层协议和结构，直接编写与平台无关的应用程序；</li>
+</ul>
+<h4 id="抽象端点"><a href="#抽象端点" class="headerlink" title="抽象端点"></a>抽象端点</h4><ul>
+<li>它是网络通信过程中端点的抽象表示，包含进行网络通信必须的五种信息：连接使用的协议，本地主机的IP地址，本地进程的协议端口，远地主机的IP地址，远地进程的协议端口；</li>
+<li>用于描述IP地址和端口，由IP地址和端口号唯一确定；</li>
+</ul>
+<p><em>*TCP/IP协议：不单指TCP和IP两个协议，而是包括多个其他的协议，只是TCP和IP最具代表性，所以用来命名而已；</em></p>
+<h2 id="Socket的作用"><a href="#Socket的作用" class="headerlink" title="Socket的作用"></a>Socket的作用</h2><h4 id="通过端口来标识进程"><a href="#通过端口来标识进程" class="headerlink" title="通过端口来标识进程"></a>通过端口来标识进程</h4><p>不同的网络应用程序有不同的端口，通过“网络地址+端口号”的标识方法，可以唯一标识计算机上的应用程序；</p>
+<h4 id="实现进程间的数据传输"><a href="#实现进程间的数据传输" class="headerlink" title="实现进程间的数据传输"></a>实现进程间的数据传输</h4><ul>
+<li>不仅支持异地进程的通信，也支持本地进程的通信； </li>
+<li>在端口与端口之间以流stream的方式传输数据；（因为任何二进制数据都可以保存到流中，所以Socket可以在客户端与服务器之间传输任何形式的数据）</li>
+<li>是应用程序用来在网络上发送或接收数据包的对象；（向网络发出请求或者应答网络请求）</li>
+</ul>
+<h2 id="Socket的分类"><a href="#Socket的分类" class="headerlink" title="Socket的分类"></a>Socket的分类</h2><p>这里只介绍常用的两种分类：</p>
+<ol>
+<li><strong>Stream Socket</strong>（字节流Socket），最常用的套接字类型，面向连接，主要用于TCP服务应用；</li>
+<li><strong>Datagram Socket</strong> （数据报Socket），无连接，主要应用于UDP服务应用；传输不保证顺序性、可靠性和无重复性，通常用于单个报文传输或可靠性不重要的场合。</li>
+</ol>
+<h2 id="Socket的应用"><a href="#Socket的应用" class="headerlink" title="Socket的应用"></a>Socket的应用</h2><h3 id="进程间的通信"><a href="#进程间的通信" class="headerlink" title="进程间的通信"></a>进程间的通信</h3><ul>
+<li>建立网络通信连接至少要一对端口号(socket);</li>
+<li>进程通信前，双方首先必须各自创建一个socket， 正如打电话之前，双方必须各自拥有一台电话机一样；</li>
+<li>网络通信通常被放到单独的线程中：即除了游戏的主线程之外，还会有一个发送协议的线程，和一个接收协议的线程；</li>
+</ul>
+<h3 id="服务端和客户端的通信"><a href="#服务端和客户端的通信" class="headerlink" title="服务端和客户端的通信"></a>服务端和客户端的通信</h3><h4 id="TCP传输："><a href="#TCP传输：" class="headerlink" title="TCP传输："></a>TCP传输：</h4><p>首先服务器创建一个负责监听的socket，然后客户端创建一个socket（需要绑定服务器端的IP和端口）进行服务器连接，当服务器端监听到有客户端连接过来时，就创建一个负责和客户端通信的新的socket，通过该socket发送消息给客户端并接受客户端的消息，一旦客户端确认连接，则连接建立；</p>
+<h4 id="UDP传输："><a href="#UDP传输：" class="headerlink" title="UDP传输："></a>UDP传输：</h4><p>不太区分服务器端和客户端，AB两端都需要创建一个绑定本地IP和端口的socket；<br>两端都可以给指定另一端IP和端口的IPEndPoint发送消息，也可以等待接受信息；</p>
+<p><em>因为UPD不需要保证包的完整性，所以跟TCP不一样，不需要监听是否有客户端连接，直接发就是了；</em></p>
 
-<h4 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h4><p>找到C:\Users\Administrator\AppData\Roaming\npm\node_modules\hexo\bin\，将此目录添加到环境变量中</p>
-<h4 id="部署Github的准备"><a href="#部署Github的准备" class="headerlink" title="部署Github的准备"></a>部署Github的准备</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save    	      //安装hexo部署工具</span><br></pre></td></tr></table></figure>
-
-<h3 id="判断hexo是否安装成功"><a href="#判断hexo是否安装成功" class="headerlink" title="判断hexo是否安装成功"></a>判断hexo是否安装成功</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v        //版本号</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改hexo的配置文件（-config-yml）的部署方式："><a href="#修改hexo的配置文件（-config-yml）的部署方式：" class="headerlink" title="修改hexo的配置文件（_config.yml）的部署方式："></a>修改hexo的配置文件（_config.yml）的部署方式：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"><span class="built_in">type</span>: git</span><br><span class="line">repo: git@github.com:username/username.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-<h4 id="本地浏览自己的博客-（在浏览器中输入-http-localhost-4000-查看生成的页面效果）"><a href="#本地浏览自己的博客-（在浏览器中输入-http-localhost-4000-查看生成的页面效果）" class="headerlink" title="本地浏览自己的博客 （在浏览器中输入 http://localhost:4000/ 查看生成的页面效果）"></a>本地浏览自己的博客 （在浏览器中输入 <a href="http://localhost:4000/" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:4000/</a> 查看生成的页面效果）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s                            //server</span><br></pre></td></tr></table></figure>
-
-<h3 id="传送到Github"><a href="#传送到Github" class="headerlink" title="传送到Github"></a>传送到Github</h3><p>在hexo目录， 右键git-bash here，进入bash命令行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean                         //清理生成的博客 (一般不调用)</span><br><span class="line">$ hexo g                             //生成静态文件：博客文件     generate</span><br><span class="line">$ hexo d                             //部署到github上            deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="拷贝别人的Blog主题"><a href="#拷贝别人的Blog主题" class="headerlink" title="拷贝别人的Blog主题"></a>拷贝别人的Blog主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/blogOwner/hexo-theme-name.git themes/name</span><br></pre></td></tr></table></figure>
-
-<h3 id="设置网站"><a href="#设置网站" class="headerlink" title="设置网站"></a>设置网站</h3><p>对整体的设置：只要修改项目目录的_config.yml<br>对局部的设置：页面展现的全部逻辑都在每个主题中控制，源代码在hexo\themes\主题名_config.yml中</p>
-<h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>将写好的markdown文件，存放到/source/-posts文件夹中</p>
-<h3 id="发表新文章"><a href="#发表新文章" class="headerlink" title="发表新文章"></a>发表新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"postName "</span>             //新建文章</span><br><span class="line">$ hexo new page <span class="string">"pageName"</span>         //新建页面</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -428,11 +439,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
-          
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
-          
-            <a href="/tags/blog/" rel="tag"># blog</a>
+            <a href="/tags/Socket，网络通信/" rel="tag"># Socket，网络通信</a>
           
         </div>
       
@@ -445,15 +452,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/12-31/基于SteamVR 1.9.16，如何设置Tracker/" rel="next" title="基于SteamVR1.9.16，如何设置Tracker">
+                <i class="fa fa-chevron-left"></i> 基于SteamVR1.9.16，如何设置Tracker
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12-26/字符编码/" rel="prev" title="字符编码">
-                字符编码 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -629,7 +636,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#结合Git和Hexo搭建博客"><span class="nav-number">1.</span> <span class="nav-text">结合Git和Hexo搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NodeJs环境搭建"><span class="nav-number">1.1.</span> <span class="nav-text">NodeJs环境搭建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">1.2.</span> <span class="nav-text">安装hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#添加环境变量"><span class="nav-number">1.2.1.</span> <span class="nav-text">添加环境变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署Github的准备"><span class="nav-number">1.2.2.</span> <span class="nav-text">部署Github的准备</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#判断hexo是否安装成功"><span class="nav-number">1.3.</span> <span class="nav-text">判断hexo是否安装成功</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改hexo的配置文件（-config-yml）的部署方式："><span class="nav-number">1.4.</span> <span class="nav-text">修改hexo的配置文件（_config.yml）的部署方式：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本地浏览自己的博客-（在浏览器中输入-http-localhost-4000-查看生成的页面效果）"><span class="nav-number">1.4.1.</span> <span class="nav-text">本地浏览自己的博客 （在浏览器中输入 http://localhost:4000/ 查看生成的页面效果）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传送到Github"><span class="nav-number">1.5.</span> <span class="nav-text">传送到Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拷贝别人的Blog主题"><span class="nav-number">1.6.</span> <span class="nav-text">拷贝别人的Blog主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站"><span class="nav-number">1.7.</span> <span class="nav-text">设置网站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写博客"><span class="nav-number">1.8.</span> <span class="nav-text">写博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发表新文章"><span class="nav-number">1.9.</span> <span class="nav-text">发表新文章</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Socket的起源"><span class="nav-number">1.</span> <span class="nav-text">Socket的起源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Socket？"><span class="nav-number">2.</span> <span class="nav-text">什么是Socket？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通信接口"><span class="nav-number">2.0.1.</span> <span class="nav-text">通信接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#抽象端点"><span class="nav-number">2.0.2.</span> <span class="nav-text">抽象端点</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#Socket的作用"><span class="nav-number">3.</span> <span class="nav-text">Socket的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通过端口来标识进程"><span class="nav-number">3.0.1.</span> <span class="nav-text">通过端口来标识进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实现进程间的数据传输"><span class="nav-number">3.0.2.</span> <span class="nav-text">实现进程间的数据传输</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Socket的分类"><span class="nav-number">4.</span> <span class="nav-text">Socket的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Socket的应用"><span class="nav-number">5.</span> <span class="nav-text">Socket的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进程间的通信"><span class="nav-number">5.1.</span> <span class="nav-text">进程间的通信</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务端和客户端的通信"><span class="nav-number">5.2.</span> <span class="nav-text">服务端和客户端的通信</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP传输："><span class="nav-number">5.2.1.</span> <span class="nav-text">TCP传输：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UDP传输："><span class="nav-number">5.2.2.</span> <span class="nav-text">UDP传输：</span></a></li></ol></li></ol></li></div>
             
 
           </div>
